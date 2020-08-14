@@ -474,7 +474,6 @@ em {
 }
 .catalog-item .open-info-item-wrapper .open-info-item {
   width: 840px;
-  height: 90%;
   padding: 20px;
   background: #fff;
   position: fixed;
@@ -502,7 +501,6 @@ em {
   display: flex;
   justify-content: space-between;
   width: 55%;
-  height: 100%;
   float: left;
 }
 .catalog-item .open-info-item-wrapper .open-info-item .left img {
