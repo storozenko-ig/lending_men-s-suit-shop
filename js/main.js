@@ -1,5 +1,5 @@
 //Opening box with infortion about thing
-openAndClosedBlock(".catalog-item", "img", ".open-info-item-wrapper", ".close");
+openInformationAboutThing(".catalog-item", "img", ".open-info-item-wrapper", ".close", "div.open-picturs > img", ".test");
 
 //Opening Form
 openAndClosedBlock(".catalog-item", ".buy-item-btn", ".popup-form", ".popur-form-closed");

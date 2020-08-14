@@ -1,4 +1,4 @@
-//Opening box with information about thing
+//Opening box with form
 function openAndClosedBlock(classParent, elemSearch, openBlock, classNameClosed) {
   [...document.querySelectorAll(classParent)].forEach((el) => {
     let openBl = el.querySelector(openBlock);
@@ -10,6 +10,31 @@ function openAndClosedBlock(classParent, elemSearch, openBlock, classNameClosed)
       openBl.style.display = "none";
     };
   });
+}
+
+//Opening box with information about thing
+function openInformationAboutThing(classParent, elemSearch, openBlock, classNameClosed, pactures, generalImg) {
+  [...document.querySelectorAll(classParent)].forEach((el) => {
+    let openBl = el.querySelector(openBlock);
+    let elem = el.querySelector(elemSearch);
+    elem.onclick = (e) => {
+      openBl.style.display = "block";
+    };
+    el.querySelector(classNameClosed).onclick = (e) => {
+      openBl.style.display = "none";
+    };
+    miniGallery(el, pactures, generalImg);
+  });
+}
+
+function miniGallery(el, pactures, generalImg) {
+  let arrPicturs = el.querySelectorAll(pactures);
+  let img = el.querySelector(generalImg);
+  for (let pictur of arrPicturs) {
+    pictur.onclick = (e) => {
+      img.src = pictur.src;
+    };
+  }
 }
 
 //Opening box form in information about thing
