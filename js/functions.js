@@ -1,4 +1,4 @@
-//Opening box with information about thing/form
+//Opening box with information about thing
 function openAndClosedBlock(classParent, elemSearch, openBlock, classNameClosed) {
   [...document.querySelectorAll(classParent)].forEach((el) => {
     let openBl = el.querySelector(openBlock);
