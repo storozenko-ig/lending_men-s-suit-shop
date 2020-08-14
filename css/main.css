@@ -1,0 +1,16 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+}
+
+.hadder__top-noice {
+  background-color: white;
+}
+
+/*# sourceMappingURL=main.css.map */
